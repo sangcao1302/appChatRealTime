@@ -15,7 +15,7 @@ const{Server}=require("socket.io")
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
-const PORT=process.env.PORT || 5000
+const PORT=process.env.PORT || 80
 
 
 const cors=require("cors")
