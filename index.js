@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
 server.listen(PORT,()=>{
   console.log("SERVER RUNNING")
 })
-http.listen()
+
 
 // const express = require('express');
 // const app = express();
