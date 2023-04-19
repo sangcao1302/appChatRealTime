@@ -15,7 +15,7 @@ const{Server}=require("socket.io")
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
-const PORT=process.env.PORT || 80
+const PORT=process.env.PORT || 8080
 
 
 const cors=require("cors")
@@ -53,7 +53,7 @@ io.on("connection", (socket) => {
 server.listen(PORT,()=>{
   console.log("SERVER RUNNING")
 })
-
+http.listen()
 
 // const express = require('express');
 // const app = express();
