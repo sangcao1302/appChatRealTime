@@ -4,7 +4,7 @@ const app= express()
 const http=require("http")
 const server=http.createServer(app)
 const{Server}=require("socket.io")
-require("dotenv").config()
+// require("dotenv").config()
 // const io = new Server(server);
 
 // app.use(express.static(path.join(__dirname+"/public")))
