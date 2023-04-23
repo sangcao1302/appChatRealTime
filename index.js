@@ -16,7 +16,7 @@ const{Server}=require("socket.io")
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/index.html');
 });
-const PORT=process.env.PORT || 8080
+const PORT=process.env.PORT || 3001
 
 
 const cors=require("cors")
@@ -32,7 +32,7 @@ const io=new Server(server,{
 
 
 
-app.use(express.static(path.join(__dirname+"/public")))
+// app.use(express.static(path.join(__dirname+"/public")))
 io.on("connection", (socket) => {
     console.log(`User Connected: ${socket.id}`)
    
